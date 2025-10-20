@@ -1,6 +1,36 @@
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+
+// Typography
+$base-font: "Roboto", sans-serif;
+$alt-font: "Open Sans", sans-serif;
+$base-font-size: 16;
+$base-line-height: 1.5;
+
+// Grid
+$max-width: 1440px;
+$base-spacing-unit: 16px;
+
 // Colours
 $background: #EBF6F8;
 $orange: #FF5C00;
 $grey: #EBEBEB;
 $black: #000000;
 $white: #FFFFFF;
+
+// Spacing
+$spacings: (
+    'xs' ($base-spacing-unit * 0.5),
+    'sm' ($base-spacing-unit * 1),
+    'md' ($base-spacing-unit * 2),
+    'lg' ($base-spacing-unit * 3),
+    'xl' ($base-spacing-unit * 4)
+);
+
+// Misc
+$border-radius: 8px;
+$box-shadow: 0px 8px 24px -8px rgba(0, 0, 0, 0.32);
+$transition: 250ms ease-in-out;

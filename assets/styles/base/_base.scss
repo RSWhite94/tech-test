@@ -1,1 +1,51 @@
 @use '../config' as *;
+
+body {
+    @include font-size($base-font-size);
+    color: $black;
+    font-family: $base-font;
+    line-height: $base-line-height;
+    text-size-adjust: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: $base-spacing-unit * 1.5;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    &:not(.button) {
+        transition: $transition;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+// Spacings based on variables
+@each $name, $size in $spacings {
+    .py-#{$name} {
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+    .px-#{$name} {
+        padding-left: $size;
+        padding-right: $size;
+    }
+    .p-#{$name} {
+        padding: $size;
+    }
+    .my-#{$name} {
+        margin-top: $size;
+        margin-bottom: $size;
+    }
+    .mx-#{$name} {
+        margin-left: $size;
+        margin-right: $size;
+    }
+    .m-#{$name} {
+        margin: $size;
+    }
+}

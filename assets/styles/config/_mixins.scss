@@ -1,0 +1,86 @@
+@use '../config/variables' as *;
+@use "sass:math";
+
+// Media Queries
+@mixin xs() {
+    @media screen and (min-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media screen and (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin max($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// Font Size
+@mixin font-size($px) {
+    font-size: $px + px;
+    font-size: #{math.div($px, 16)}rem;
+}
+
+// Layout
+@mixin container {
+    max-width: $grid-max-width;
+    margin: 0 auto;
+    padding: 0 $base-spacing-unit;
+}
+
+// Font Styles
+@mixin h1-style {
+    @include font-size(28);
+    font-family: $alt-font;
+    font-weight: 400;
+    @include md {
+        @include font-size(56);
+    }
+}
+
+@mixin h2-style {
+    @include font-size(24);
+    font-family: $alt-font;
+    font-weight: 400;
+    @include md {
+        @include font-size(42);
+    }
+}
+
+@mixin h3-style {
+    @include font-size(20);
+    font-family: $alt-font;
+    font-weight: 400;
+    @include md {
+        @include font-size(32);
+    }
+}
+
+@mixin h4-style {
+    font-family: $alt-font;
+    font-weight: 700;
+}
+
+@mixin h5-style {
+    font-family: $alt-font;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 700;
+}
