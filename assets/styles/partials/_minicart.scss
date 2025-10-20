@@ -1,0 +1,15 @@
+@use '../config' as *;
+
+.minicart {
+    display: flex;
+    position: relative;
+    &__icon {
+        min-width: 26px;
+    }
+    &__counter {
+       @include absolute-center;
+       @include font-size(14);
+       font-weight: bold;
+       padding-top: 4px;
+    }
+}

@@ -24,6 +24,10 @@ a {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 // Spacings based on variables
 @each $name, $size in $spacings {
     .py-#{$name} {

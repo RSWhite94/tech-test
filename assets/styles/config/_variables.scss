@@ -23,11 +23,11 @@ $white: #FFFFFF;
 
 // Spacing
 $spacings: (
-    'xs' ($base-spacing-unit * 0.5),
-    'sm' ($base-spacing-unit * 1),
-    'md' ($base-spacing-unit * 2),
-    'lg' ($base-spacing-unit * 3),
-    'xl' ($base-spacing-unit * 4)
+    'xs' : ($base-spacing-unit * 0.5),
+    'sm' : ($base-spacing-unit * 1),
+    'md' : ($base-spacing-unit * 2),
+    'lg' : ($base-spacing-unit * 3),
+    'xl' : ($base-spacing-unit * 4)
 );
 
 // Misc
