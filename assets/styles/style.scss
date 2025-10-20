@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+//1. Base setup
+@use 'base/reset';
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/typography';
+
+//2. Components
+@use 'components/buttons';
+
+//3. Layout
+@use 'layout/header';
+@use 'layout/footer';
+
+//4. Partials
+@use 'partials/product';
