@@ -40,7 +40,7 @@
 
 // Layout
 @mixin container {
-    max-width: $grid-max-width;
+    max-width: $max-width;
     margin: 0 auto;
     padding: 0 $base-spacing-unit;
 }
@@ -83,4 +83,12 @@
     text-transform: uppercase;
     letter-spacing: 0;
     font-weight: 700;
+}
+
+// Misc Styling
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

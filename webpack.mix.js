@@ -25,4 +25,4 @@ mix.sass('assets/styles/style.scss', 'dist/style.min.css')
 
 // JS
 
-mix.scripts(['assets/scripts/scripts.js'], 'dist/scripts.min.js');
+mix.js(['assets/scripts/scripts.js'], 'dist/scripts.min.js');

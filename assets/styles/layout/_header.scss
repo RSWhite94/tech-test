@@ -1,1 +1,20 @@
 @use '../config' as *;
+@use "sass:map";
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: map.get($spacings, 'sm');
+        padding-bottom: map.get($spacings, 'sm');
+    }
+    &__logo {
+        min-width: 120px;
+    }
+}
