@@ -10,7 +10,7 @@ customElements.define('bork-header', class extends HTMLElement {
                         <img src="assets/icons/logo.svg" alt="Bork logo"/>
                     </a>
                     <div class="header__minicart">
-                        <button class="minicart">
+                        <button class="minicart open-cart">
                             <img class="minicart__icon"src="assets/icons/bag.svg" alt="Bork logo"/>
                             <span class="minicart__counter">2</span>
                         </button>

@@ -11,9 +11,9 @@ customElements.define('bork-product', class extends HTMLElement {
                <div class="bork-product__details">
                     <h3>Natures Menu Dog Food Can Chicken</h3>
                     <p class="bork-product__price">£22.81</p>
-                    <a href="" class="button">
+                    <button class="button open-cart">
                         <span class="button__text">Add To Bag</span>
-                    </a>
+                    </button>
                </div>
             </div>
         `;
