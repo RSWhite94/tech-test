@@ -1,1 +1,23 @@
 @use '../config' as *;
+@use 'sass:map';
+
+.bork-product {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    text-align: center;
+    padding: map.get($spacings, 'md');
+    @include md {
+        padding: map.get($spacings, 'lg');
+    }
+    &__price {
+        @include h3-style;
+        color: $orange;
+        font-weight: bold;
+    }
+    &__details {
+        padding-top: map.get($spacings, 'sm');
+    }
+}

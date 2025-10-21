@@ -1,1 +1,20 @@
 @use '../config' as *;
+@use 'sass:map';
+@use 'sass:color';
+
+.button {
+    display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: map.get($spacings, 'sm') map.get($spacings, 'lg');
+    border-radius: 50px;
+    background: $orange;
+    color: $white;
+    transition: $transition;
+    &:hover {
+        background: color.adjust($orange, $lightness: -10%);
+    }
+    &__text {
+        @include h5-style;
+    }
+}

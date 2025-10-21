@@ -6,7 +6,7 @@ customElements.define('bork-header', class extends HTMLElement {
         this.innerHTML = `
             <header class="header">
                 <div class="header__container">
-                    <a class="header__logo" href="/">
+                    <a class="header__logo" href="">
                         <img src="assets/icons/logo.svg" alt="Bork logo"/>
                     </a>
                     <div class="header__minicart">

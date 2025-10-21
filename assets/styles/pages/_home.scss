@@ -6,12 +6,13 @@
         display: flex;
     }
     &__wrapper {
-        padding: map.get($spacings, 'xl') map.get($spacings, 'sm');
+        padding: map.get($spacings, 'xl') map.get($spacings, 'md');
         @include md {
             padding: map.get($spacings, 'xxl') map.get($spacings, 'xl');
         }
         > * {
-            max-width: 550px;
+            display: block;
+            max-width: 520px;
             margin-left: auto;
             margin-right: auto;
         }
