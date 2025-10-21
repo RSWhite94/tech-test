@@ -6,7 +6,7 @@ customElements.define('bork-drawer', class extends HTMLElement {
         this.innerHTML = `
             <div class="bork-drawer__header">
                 <h2>Your Bag</h2>
-                <button class="bork-drawer__close">
+                <button class="bork-drawer__close close-cart">
                     <img src="assets/icons/close.svg" alt="Close mini-cart"/>
                 </button>
             </div>
@@ -25,9 +25,9 @@ customElements.define('bork-drawer', class extends HTMLElement {
                 <a href="" class="button">
                     <span class="button__text">Proceed To Checkout</span>
                 </a>
-                <a href="" class="button button--secondary">
+                <button class="button button--secondary close-cart">
                     <span class="button__text">Continue Shopping</span>
-                </a>
+                </button>
             </div>
         `;
     }
