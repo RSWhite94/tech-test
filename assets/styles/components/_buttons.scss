@@ -17,4 +17,18 @@
     &__text {
         @include h5-style;
     }
+    &--secondary {
+        background: $white;
+        color: $black;
+        > span {
+            transition: $transition;
+            border-bottom: 2px solid $black;
+        }
+        &:hover {
+            background: $white;
+            > span {
+                border-color: $orange;
+            }
+        }
+    }
 }
