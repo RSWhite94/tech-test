@@ -2,10 +2,12 @@
 @use "sass:map";
 
 .header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
+    @include md {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
     &__container {
         @include container;
         display: flex;
@@ -13,6 +15,9 @@
         justify-content: space-between;
         padding-top: map.get($spacings, 'sm');
         padding-bottom: map.get($spacings, 'sm');
+        @include md {
+            padding: map.get($spacings, 'xl');
+        }
     }
     &__logo {
         min-width: 120px;

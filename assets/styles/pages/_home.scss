@@ -1,0 +1,37 @@
+@use '../config' as *;
+@use "sass:map";
+
+.featured {
+    @include md {
+        display: flex;
+    }
+    &__wrapper {
+        padding: map.get($spacings, 'xl') map.get($spacings, 'sm');
+        @include md {
+            padding: map.get($spacings, 'xxl') map.get($spacings, 'xl');
+        }
+        > * {
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__column {
+        width: 100%;
+        text-align: center;
+        @include md {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        &--grey-bkg {
+            background-color: $background;
+        }
+        &--grey-txt {
+            p {
+                color: $grey-font-colour;
+            }
+        }
+    }
+}

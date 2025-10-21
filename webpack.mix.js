@@ -20,6 +20,7 @@ mix.sass('assets/styles/style.scss', 'dist/style.min.css')
     .purgeCss({
         content: [
             '*.html',
+            'assets/scripts/*.js'
         ]
     });
 
