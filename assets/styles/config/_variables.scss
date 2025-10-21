@@ -11,7 +11,7 @@ $base-font-size: 16;
 $base-line-height: 1.5;
 
 // Grid
-$max-width: 1440px;
+$max-width: 100%;
 $base-spacing-unit: 16px;
 
 // Colours
@@ -19,6 +19,7 @@ $background: #EBF6F8;
 $orange: #FF5C00;
 $grey: #EBEBEB;
 $black: #000000;
+$grey-font-colour: #888888;
 $white: #FFFFFF;
 
 // Spacing
@@ -27,7 +28,8 @@ $spacings: (
     'sm' : ($base-spacing-unit * 1),
     'md' : ($base-spacing-unit * 2),
     'lg' : ($base-spacing-unit * 3),
-    'xl' : ($base-spacing-unit * 4)
+    'xl' : ($base-spacing-unit * 4),
+    'xxl' : ($base-spacing-unit * 6),
 );
 
 // Misc

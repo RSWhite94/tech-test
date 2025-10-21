@@ -11,8 +11,10 @@
 
 //3. Layout
 @use 'layout/header';
-@use 'layout/footer';
 
 //4. Partials
 @use 'partials/product';
 @use 'partials/minicart';
+
+//5. Page specific styles
+@use 'pages/home';

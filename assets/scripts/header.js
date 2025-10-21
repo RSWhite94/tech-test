@@ -1,4 +1,4 @@
-class Header extends HTMLElement {
+customElements.define('bork-header', class extends HTMLElement {
     constructor() {
         super();
     }
@@ -19,6 +19,4 @@ class Header extends HTMLElement {
             </header>
         `;
     }
-}
-
-customElements.define('bork-header', Header);
+});
