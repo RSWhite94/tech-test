@@ -13,7 +13,7 @@
     max-width: 600px;
     box-shadow: $box-shadow;
     overflow-y: auto;
-    transition: $transition;
+    transition: 350ms ease-in-out;
     transform: translateX(100%);
     &__header {
         display: flex;
