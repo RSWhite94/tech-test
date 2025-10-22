@@ -3,6 +3,10 @@ A responsive landing page for a fictional pet brand, with animated cart function
 Uses a simple Laravel Mix task runner:
 
 ## Commands
+**Install packages:**
+```
+npm install
+```
 **Watch changes:**
 ```
 npx mix watch
