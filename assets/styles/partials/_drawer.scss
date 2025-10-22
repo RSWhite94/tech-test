@@ -27,32 +27,6 @@
             margin: 0 16px 0 0;
         }
     }
-    &__product {
-        display: flex;
-        padding-bottom: 24px;
-        margin-bottom: 24px;
-        border-bottom: 2px solid $background;
-        img {
-            max-width: 40%;
-        }
-    }
-    &__details {
-        margin-left: 24px;
-        h3 {
-            margin: 0;
-            @include font-size(16);
-            @include md {
-                @include font-size(20);
-            }
-        }
-    }
-    &__price {
-        color: $orange;
-        font-weight: bold;
-        @include md {
-            @include font-size(20);
-        }
-    }
     &__button {
         @include font-size(12);
         text-transform: uppercase;
