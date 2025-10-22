@@ -8,7 +8,7 @@
     &__wrapper {
         padding: map.get($spacings, 'xl') map.get($spacings, 'md');
         @include md {
-            padding: map.get($spacings, 'xxl') map.get($spacings, 'xl');
+            padding: map.get($spacings, 'xxxl') map.get($spacings, 'xxl');
         }
         > * {
             display: block;
